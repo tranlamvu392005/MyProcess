@@ -1,0 +1,78 @@
+﻿<style type="text/css">
+    html{
+        font-size:14px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    body{
+        background-color: #000000;
+    }
+    #container{
+        border:2px solid #ff000000;
+        border-radius: 10px
+    }
+    header{
+        background-color: burlywood;
+        border:2px solid #000000;
+        padding: 10px;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .logo img{
+        height: 40px
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+
+    }
+    nav ul li{
+        margin-left:20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #000000;
+        font-weight:bold;
+    }
+    section{
+        background-color:white;
+        min-height:300px;
+    }
+    
+</style>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div id="container"> </div>
+    <hearder>
+        <div class=" logo">
+            <img src="https://kenh14cdn.com/203336854389633024/2021/11/16/photo-1-16370410550331769527871.jpg" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="~/Home/test">Trang chu</a></li>
+                <li><a href="~/Product/ProductDetail">San pham</a></li>
+                <li><a href="~/Product/ShoppingCart">Gio hang</a></li>
+                <li><a href="~/Home/Contact">Lien he</a></li>
+            </ul>
+        </nav>
+         
+    </hearder>
+    <section>
+
+      
+            @RenderBody()
+  
+    </section>
+    <footer>
+        FOOTER
+    </footer>
+    
+</body>
+</html>
